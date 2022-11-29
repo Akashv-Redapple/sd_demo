@@ -4,14 +4,14 @@ let authenticate = async  (req, res) => {
     try{
 
         data = {
-                PlayerID: "A135A67A396F",
+                PlayerID: "A135A67A39T",
                 CurrencyCode: "USD",
                 LanguageCode: "en",
                 Code: "0",
                 Status: ""
         }
-        apiReponse = response.generate(false, `Done`, data)
-        res.status(200).send(apiReponse)
+        // apiReponse = response.generate(false, `Done`, data)
+        res.status(200).send(data)
 
 
     }catch(err){
@@ -26,12 +26,12 @@ let getBalance = async  (req, res) => {
     try{
 
         data = {
-                Amount: 1000.00,
-                Code: "0",
+                Amount: 100000,
+                Code: 0,
                 Status: ""          
         }
-        apiReponse = response.generate(false, `Done`, data)
-        res.status(200).send(apiReponse)
+        // apiReponse = response.generate(false, `Done`, data)
+        res.status(200).send(data)
 
 
     }catch(err){
